@@ -1,6 +1,6 @@
 # Maintainer: Natanael Copa <ncopa@alpinelinux.org>
 pkgname=gst-plugins-base
-pkgver=1.14.1
+pkgver=1.14.4
 pkgrel=0
 pkgdesc="GStreamer Multimedia Framework Base Plugins"
 url="https://gstreamer.freedesktop.org"
@@ -68,4 +68,5 @@ doc() {
 	default_doc
 	replaces="${pkgname}1-doc"
 }
-sha512sums="bca9db8780fe24c19a2c4eae9a16dc0856cb38077580e4344bd4f7fa9a7a03079b92556ff35475a574f624a5a721d80ef925790670e4cc809361ed01108a141e  gst-plugins-base-1.14.1.tar.xz"
+
+sha512sums="42c59df9f2d848108f12afa0466acbcfa5ccda64e4d0d44608d4268abed20f2e036713de04e7d71feaed1868ad742c5bcb55ae0eef5dec8e19e053dc8541b8af  gst-plugins-base-1.14.4.tar.xz"

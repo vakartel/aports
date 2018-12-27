@@ -1,15 +1,15 @@
 # Contributor: <xmingske@gmail.com>
 # Maintainer: Natanael Copa <ncopa@alpinelinux.org>
 pkgname=gsoap
-pkgver=2.8.69
+pkgver=2.8.74
 pkgrel=0
 arch="all"
 pkgdesc="Cross-platform C and C++ SDK for SOAP/XML Web services"
 license="GPL-2.0-or-later gSOAP-1.3b"
 url="http://gsoap2.sourceforge.net"
-makedepends="autoconf automake bison flex libressl-dev libtool zlib-dev"
+makedepends="autoconf automake bison flex openssl-dev libtool zlib-dev"
 subpackages="$pkgname-dev"
-source="http://downloads.sourceforge.net/project/gsoap2/gsoap-${pkgver%.*}/gsoap_$pkgver.zip
+source="https://downloads.sourceforge.net/project/gsoap2/gsoap-${pkgver%.*}/gsoap_$pkgver.zip
 	musl-fixes.patch
 	"
 builddir="$srcdir/$pkgname-${pkgver%.*}"
@@ -31,5 +31,5 @@ package() {
 	make DESTDIR="$pkgdir" install
 }
 
-sha512sums="a1dba93cfb7ff0b36380e76aebddcadd0eecef71ba41d275e52373323cc3dc5f346b9717cf86005c0072596647d0b80871b7135c01283f419f041b371d3ba44d  gsoap_2.8.69.zip
+sha512sums="85284b88a94f07f433ffaeb9031c24d4c9c3eb82f8c590fa257cf9392fa0382cdcde5b3d5c7df903c6ddec41b876643b21ea24d18186b03db9dc8a4d6e8477ad  gsoap_2.8.74.zip
 cb276ffdd213f3626f212f304628d0e91974e493afd325bb324031d5e5ee2cb1de0f57d69da1608320f8e999984c64700fe9273ecdba97401366f662ac15d423  musl-fixes.patch"

@@ -1,19 +1,20 @@
 # Contributor: Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
 # Maintainer: Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
 pkgname=awall
-pkgver=1.6.4
-pkgrel=0
+pkgver=1.6.8
+pkgrel=1
 pkgdesc="Alpine Wall"
 url="https://git.alpinelinux.org/cgit/awall/"
 _luaver=5.2
 arch="noarch"
 license="GPL-2.0"
 replaces="awall-nat"
-depends="bind-tools ip6tables ipset iptables lua$_luaver lua$_luaver-alt-getopt lua$_luaver-cjson
-         lua$_luaver-pc lua$_luaver-posix lua$_luaver-stringy xtables-addons"
+depends="drill ip6tables ipset iptables lua$_luaver lua$_luaver-alt-getopt
+         lua$_luaver-cjson lua$_luaver-pc lua$_luaver-posix lua$_luaver-stringy
+         xtables-addons"
 subpackages="$pkgname-masquerade $pkgname-policies"
 triggers="$pkgname.trigger=/usr/share/awall"
-source="http://dev.alpinelinux.org/archive/awall/awall-$pkgver.tar.xz
+source="https://dev.alpinelinux.org/archive/awall/awall-$pkgver.tar.xz
 	setup-firewall
 	"
 
@@ -51,5 +52,5 @@ policies() {
 	install -D "$srcdir"/setup-firewall "$subpkgdir"/usr/sbin/setup-firewall
 }
 
-sha512sums="51f6339d7f27bdbefb78daa69dcd4bcc3d87f80fd5e1691d6a1d8c9931196f253e986ed16a48cbf34a3f5ccb897fdadedff29f78e1f61691563b3de703c10021  awall-1.6.4.tar.xz
-32f421b97b0d5d8cda4aa66c5f02319ffef12368d2c4903dbe9f6f3feb48959f6624706083c89cc2cd0ce2878c1c3962b4b7f906713623fe66181d071db37f61  setup-firewall"
+sha512sums="83e29da48d46e69d19ab07b3979ade82fbb4923c0ac47440debd33ad2ee3e2cc652baf88dfbe033ad518c5b4cf63bf03e44a7b32637015571b2955be5575effa  awall-1.6.8.tar.xz
+c9307fe9d8d7cb64e20c3eb301628b6b57e3ccfa104bbe0f08204b4ee49214dcd67b81124094e35ff19603e19363b864140658f3b5138bb02dcff1670a068bd4  setup-firewall"

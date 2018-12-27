@@ -1,7 +1,7 @@
 # Contributor: Roberto Oliveira <robertoguimaraes8@gmail.com>
 # Maintainer: Roberto Oliveira <robertoguimaraes8@gmail.com>
 pkgname=gradle
-pkgver=4.9
+pkgver=4.10.3
 pkgrel=0
 pkgdesc="Build tool with a focus on build automation and support for multi-language development"
 url="https://gradle.org/"
@@ -37,4 +37,4 @@ package() {
 	done
 }
 
-sha512sums="e1e6ec7ed46cd4e9c833956dd864d6a26a63f417137945d9235e31344c5436ea70aa000977c8d7a6acaad914c1dfce5241d21a0f32d52973c40337663e815098  gradle-4.9-bin.zip"
+sha512sums="fd3f4cfbd5262cc8514b7fb3e303ef46b9ca4b22901f1fe848ec4679f8d6bc283bde12ec584437624f0acf5486e5663966ad0736bf8ab341ac3e2667f514ceec  gradle-4.10.3-bin.zip"
